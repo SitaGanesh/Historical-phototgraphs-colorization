@@ -1,0 +1,10 @@
+cd historical-colorization
+
+python -m venv venv
+
+
+venv\Scripts\activate
+
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+
+pip install jupyter numpy pillow matplotlib opencv-python tqdm
