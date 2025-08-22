@@ -1,0 +1,74 @@
+# Historical Image Colorization Configuration
+
+# Model Configuration
+model:
+  input_channels: 1  # L channel only
+  output_channels: 2  # ab channels
+  use_period_embedding: true
+  bilinear_upsampling: true
+
+# Training Configuration
+training:
+  batch_size: 8
+  num_epochs: 100
+  learning_rate: 0.001
+  weight_decay: 0.00001
+  
+  # Learning rate scheduler
+  lr_scheduler:
+    step_size: 30
+    gamma: 0.5
+  
+  # Loss function weights
+  loss:
+    alpha: 1.0  # L1 loss weight
+    beta: 0.1   # Smoothness loss weight
+
+# Data Configuration
+data:
+  image_size: 256
+  train_split: 0.8
+  val_split: 0.2
+  num_workers: 4
+  
+  # Data augmentation
+  augmentation:
+    horizontal_flip: 0.5
+    rotation_degrees: 5
+    color_jitter:
+      brightness: 0.1
+      contrast: 0.1
+      saturation: 0.1
+      hue: 0.05
+
+# Historical Periods
+periods:
+  available: ['default', '1920s', 'wwii', 'victorian']
+  default_period: '1920s'
+
+# Paths (adjust according to your folder structure)
+paths:
+  base_dir: 'D:/colorization_task2/historical-colorization/colorization'
+  data_dir: 'data'
+  train_dir: 'data/train'
+  val_dir: 'data/validation'
+  test_dir: 'data/raw'
+  
+  output_dir: 'outputs'
+  colorized_dir: 'outputs/colorized'
+  samples_dir: 'outputs/samples'
+  
+  models_dir: 'models'
+  checkpoints_dir: 'checkpoints'
+  logs_dir: 'logs'
+
+# Hardware Configuration  
+hardware:
+  device: 'auto'  # 'auto', 'cuda', 'cpu'
+  mixed_precision: false
+  
+# Logging Configuration
+logging:
+  log_interval: 100  # Log every N batches
+  save_samples_interval: 1  # Save sample images every N epochs
+  checkpoint_interval: 10   # Save checkpoint every N epochs
