@@ -1,4 +1,21 @@
-venv/ 
-__pycache__/ 
-*.pyc 
-data/ 
+# Python / env
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Large model files & checkpoints
+colorization/checkpoints/
+colorization/models/
+colorization/outputs/
+*.pth
+*.pt
+*.ckpt
+*.h5
+
+# logs, datasets, caches
+*.log
+*.csv
