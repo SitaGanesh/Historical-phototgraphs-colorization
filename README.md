@@ -4,8 +4,6 @@
 
 ![Python](https://img.shields.io/badge/python-v3.8+-blue.svg)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.8.0-red.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
-![Status](https://img.shields.io/badge/status-active-success.svg)
 
 *Transform black and white historical photographs into vivid, period-accurate color images using deep learning*
 
@@ -323,6 +321,40 @@ historical-colorization/
 - **`outputs/colorized/`**: Final colorized results
 - **`logs/`**: TensorBoard training logs
 
+## Images Walkthrough
+
+1. Raw images:
+   
+![raw_images](https://github.com/user-attachments/assets/094766ea-2d5a-43d6-b47e-553883295d63)
+
+2. Processed Images:
+   
+![processed_images](https://github.com/user-attachments/assets/d7cd2566-4992-4591-802b-4026b6f7b463)
+
+3. Epoch 1/50 && Epochs 25/50 && Epochs 50/50
+
+![epoch1](https://github.com/user-attachments/assets/a071f930-0fd6-4c1b-874f-ce78823bcee7)
+![epochs25](https://github.com/user-attachments/assets/74d2b127-e863-4efa-bdd9-7c4d76b2890c)
+![epochs50](https://github.com/user-attachments/assets/dfc3f1e8-1315-49c8-8ec6-30b774e68975)
+
+4. Changes:
+
+![change1](https://github.com/user-attachments/assets/2ef80fc9-14b8-469a-b24a-914efaf557f3)
+![change2](https://github.com/user-attachments/assets/b7f027dc-5f87-417c-aa64-b390da81d3d0)
+
+5. Training Results:
+   
+![trainingresult](https://github.com/user-attachments/assets/a18d85a0-19bb-43e5-81e5-5f781edf7ebc)
+
+6. Output
+
+
+![result](https://github.com/user-attachments/assets/c8bfe64e-3e79-4985-ab41-27abae6a6bbd)
+
+7. Evaluation metric Report:
+   
+![evaluation_report](https://github.com/user-attachments/assets/69047712-4320-4993-96db-69c290e55ddd)
+
 ## 🎯 Next Steps and Improvements
 
 ### Immediate Enhancements
@@ -339,23 +371,6 @@ historical-colorization/
 3. **Fine-tuning**: Period-specific model variants
 4. **Mobile Deployment**: Convert model to ONNX/TensorRT for mobile apps
 
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📧 Contact
-
-For questions, issues, or collaborations, please [open an issue](https://github.com/yourusername/historical-colorization/issues) on GitHub.
 
 ---
 
@@ -364,5 +379,6 @@ For questions, issues, or collaborations, please [open an issue](https://github.
 **⭐ If you found this project helpful, please give it a star! ⭐**
 
 Made with ❤️ by Sita Ganesh
+
 
 </div>
