@@ -83,8 +83,8 @@ This project implements a sophisticated deep learning system for automatically c
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/historical-colorization.git
-cd historical-colorization
+git clone https://github.com/SitaGanesh/Historical-phototgraphs-colorization.git
+cd Historical-phototgraphs-colorization
 ```
 
 ### Step 2: Set Up Virtual Environment
@@ -382,3 +382,4 @@ Made with ❤️ by Sita Ganesh
 
 
 </div>
+
